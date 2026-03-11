@@ -1,0 +1,20 @@
+# --- Deep Learning & Computer Vision ---
+torch>=2.0.0          # YOLOv5の推論および学習用
+torchvision>=0.15.0   # 画像処理ユーティリティ
+opencv-python>=4.7.0  # 画像のプリプロセス、歪み補正
+
+# --- Big Data & Parallel Processing ---
+xarray>=2023.1.0      # 高次元衛星データ(NetCDF)の操作
+dask[complete]>=2023.3.0  # 並列分散処理パイプラインの構築
+netCDF4               # GCOM-Cデータの読み込み用フォーマット
+toolz                 # Daskの処理最適化用
+
+# --- Data Analysis & Geospatial ---
+numpy>=1.24.0         # 数値計算、行列演算
+pandas>=2.0.0         # 解析結果（検知ログ、流速データ）の管理
+scipy                 # 統計解析、動態シミュレーション
+pyproj                # 座標変換（緯度経度からメートル法への変換）
+
+# --- Visualization & GUI ---
+matplotlib            # 解析結果の可視化
+PySide6               # 業務自動化ツールのGUI構築（必要に応じて）
