@@ -1,0 +1,34 @@
+# --- Python 一時ファイル ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# --- 衛星データ (大容量ファイルは管理対象外) ---
+# NetCDF形式やHDF形式のデータ
+*.nc
+*.hdf
+*.h5
+/data/*.nc
+
+# --- AI モデル関連 ---
+# 学習済みウェイト、チェックポイントファイル
+*.pt
+*.pth
+*.weights
+/models/*.pt
+
+# --- Dask / 並列処理 ---
+# Dask のワーカが生成する一時フォルダ
+dask-worker-space/
+
+# --- 解析出力 ---
+# 推論結果の画像やログファイル
+/output/
+*.log
+
+# --- OS & エディタ ---
+.DS_Store
+.vscode/
+.idea/
